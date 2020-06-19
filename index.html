@@ -124,7 +124,7 @@
 	  
 </head>
 	
-  <body>
+  <body id='WidleStudioLoad'>
     <main>
       <section>
         <article>
@@ -198,6 +198,20 @@
         </article>
       </section>
     </main>
+<!-- Google recaptcha Invisible -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<div id='recaptcha' class="g-recaptcha"
+data-sitekey="6LffAYwUAAAAACzEZG9Kw34GOhd1v4zsCbc8tzds"
+data-callback="onSubmit"
+data-size="invisible"></div>
+<script>onload();</script>
+<script>
+    function onload() {
+      var element = document.getElementById('WidleStudioLoad');
+      grecaptcha.execute();
+    }
+  </script>
+<!-- Google recaptcha Invisible -->
   </body>
 
 <!-- Start of Async Drift Code Widle Studio -->
